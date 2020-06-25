@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+  <style type="text/css">
+
+body {
+  font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #717f86;
+    font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: #b35900;
+}
+
+header {
+
+    display: grid;
+    grid-template-rows: 84vh;
+    grid-template-columns: 203vh;
+    overflow: hidden;
+    box-shadow: 0 0.6em 0.5em rgba(0, 0, 0, 0.5);
+    position: absolute;
+
+}
+
+.video-bg {
+
+    grid-area: var(--fullGrid);
+    min-width: 90%;
+    min-height: 30%;
+    object-fit: auto;
+    z-index: -1;
+    position: relative;
+}
+
+.video-bg::-webkit-media-controls {
+    display: none !important;
+}
+
+.video-overlay {
+ 
+    grid-area: var(--fullGrid);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+nav {
+    width: 100%;
+    height: 48.5px;
+    font-family:  Calibri, Arial, serif;
+    background-color: #474A46;
+}
+
+.gradient_shadow {
+    position: absolute;
+    top: 56.5px;
+    width: 100%;
+    height: 6px;
+    background: radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%);
+    background: -webkit-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%);
+    background: -webkit-gradient(50% 0, rgba(0,0,0,.5), transparent 70%);
+    background: -moz-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%);
+    background: -o-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%);
+    background-size: 100% 6px;
+    background-repeat: no-repeat;
+}
+
+
+.first_dropmenu, .sec_dropmenu {
+    float: left;
+    height: 48.5px;
+    overflow: hidden;
+    transition: height 0.8s ease-out;
+}
+
+.first_dropmenu {
+    width: 130px;
+}
+
+.sec_dropmenu {
+    transition: height 0.3s ease-in;
+}
+
+.li_item {
+    width: 0;
+    transition: width 0.7s ease-in;
+    transition-delay: 0.4s;
+}
+
+.first_dropmenu:hover, .sec_dropmenu:hover {
+    height: 240px;
+}
+
+.sec_dropmenu:hover .li_item {
+    width: 180px;
+}
+
+.first_dropmenu a, .sec_dropmenu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 48.5px;
+    line-height: 48.5px;
+    text-align: center;
+    padding: 0 15px;
+    background-color: #474A46;
+    background-position: 50% 0;
+    font-size: 0.95em;
+}
+
+.first_dropmenu a:hover, .sec_dropmenu a:hover {
+    transition: background 0.4s linear, color 0.5s linear, font-weight 0.3s ease-in;
+    background: radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), #3BD1AB;
+    background: -webkit-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), -webkit-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), #80c1ff;
+    background: -webkit-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), -webkit-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), #80c1ff;
+    background: -moz-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), -moz-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), #80c1ff;
+    background: -o-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), -o-radial-gradient(50% 0, rgba(0,0,0,.5), transparent 70%), #3BD1AB;
+    background-size: 55% 6px, 100% 6px, cover;
+    background-position: 50% 75%, 0 0, 0 0;
+    background-repeat: no-repeat;
+    color: #474A46;
+    font-weight: bold;
+}
+
+#header h1{
+    font-family: 'Signika', sans-serif;
+    font-size: 60px;
+    color: #FFB03B;
+}
+
+#banner h2{
+    font-family: 'Signika', sans-serif;
+    font-size: 45px;
+    color: #FFB03B;
+}
+
+#banner h3{
+    font-family: 'Signika', sans-serif;
+    font-size: 45px;
+    color: #FFB03B;
+}
+
+#banner p{
+    font-family: 'Signika' , sans-serif;
+    color: #fcfcfc;
+    font-size: 34px;
+}
+.section-padding{
+    padding: 60px 0px;
+}
+.logo-name{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 65px;
+    margin-top: 140px;
+    color: #FFB03B;
+}
+.container .pro-img{
+
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    padding: 
+}
+.container .pro-img{
+  display: block;
+  margin: auto auto auto auto;
+}
+
+.containter{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin: 150px;
+    cursor: pointer;
+    overflow: hidden;    
+}
+#banner1{
+    background: url("banner3.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 630px;
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 630px;
+}
+
+.about-info h2{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Signika' , sans-serif;
+}
+
+.about-info p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Signika' , sans-serif;
+}
+
+
+#banner2{
+    background: url("banner2.jpg") no-repeat center top;
+    background-size: 200px;
+    height: 50%;
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 600px;
+}
+
+
+.container h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Signika' , sans-serif;
+    height: 50px;
+}
+
+#banner8{
+    background: url("banner8.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 600px;
+    height: 50%;
+    
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 900px;
+
+}
+
+#banner4{
+    background: url("banner4.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 600px;
+    
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 900px;
+
+}
+
+#contact{
+    background: url("banner4.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 630px;
+    height: 50px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    padding: 
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 630px;
+}
+
+.iframe{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    padding: 
+}
+
+#operationhour{
+    background: url("banner5.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 630px;
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 630px;
+}
+
+#banner5{
+    background: url("banner6.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 600px;
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 600px;
+}
+
+#banner6{
+    background: url("tapak.png") no-repeat center top;
+    background-size: cover;
+    min-height: 600px;
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 600px;
+
+}
+
+#footer{
+    background: url("footer.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 630px;
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 630px;
+}
+
+
+
+img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    transition: all is ease-in;
+}
+.container: hover img{
+  transform: scale (1.4);
+  transition: all is ease-in;
+  filter: brightness(.5);
+}
+
+.container: hover span{
+  transform: translateY(-200px);
+  font-size: 30px;
+  opacity: 1;
+  transition: all is ease-in;
+}
+
+h1{
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+  color: #FFB03B;
+}
+
+
+h2{
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+p{
+  font-family: 'Signika', sans-serif;;
+  text-align: center;
+  color: white ;
+}
+
+.icon-container {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.icon-container a{
+  width: 50px;
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #ffff;
+  size: 50%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: #444;
+    padding: 20px;
+    color: #fff;
+}
+
+.textWithBlurredBg{
+    width: 200px;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:10px;
+  }
+  
+  .textWithBlurredBg img{
+    width: 200px;
+    height: 300px;
+    margin-bottom:10px;
+    margin-left:50px;
+  }
+  
+  .textWithBlurredBg:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px orange;
+  }
+   
+  .textWithBlurredBg :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:140%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textWithBlurredBg h3{
+    top:50%
+  }
+  
+  .textWithBlurredBg:hover :not(img){
+    opacity:1;
+  }
+
+
+
+</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BURGERIA</title>
+  </head>
+
+<body>
+    <section id="banner">
+    <div class="bg-color">
+  <nav>
+            <div class="gradient_shadow"></div>
+            <div class="first_dropmenu">    
+                <a href="#aboutus">ABOUT US</a>
+            </div>
+             <div class="sec_dropmenu">
+                <a href="#team">OUR TEAM</a>
+            </div>
+            <div class="sec_dropmenu">
+                <a href="#menu">MENU</a>
+            </div>
+            <div class="sec_dropmenu">
+                <a href="#socialmedia">CONTACT</a>
+            </div>
+        </nav>
+        <br>
+        <div>
+        <header>
+    <video class="video-bg" autoplay muted loop>
+        <source src="videoburger.mp4" type="video/mp4"/>
+    </video>
+
+</header>
+</div>
+ <div class="container">
+    <img src="logo.png" class="pro-img">
+        <div class="container">
+        <div class="row">
+          <div class="inner text-center">
+         <div class="container">
+    <img src="logo.png" class="pro-img">
+        <div class="container">
+        <div class="row">
+          <div class="inner text-center">
+            <h1 class="logo-name"><br>
+              <br><center>BURGERIA</center></h1><br><br>
+        <h2><i><center>"Good food is a good mood"</center><i></h2>
+            <center><p>Specialized in western and malaysian cuisine to achieve customer satisfaction.</p></center
+          </div>
+          </section>
+          <br> <br>
+
+   <section id="about" class="section-padding">
+    <div class="container">
+          <section id="banner1">
+    <div class="bg-color">
+        <a name="aboutus"></a>
+      <center><h1>ABOUT US</h1>
+        <div class="about-info">
+              <h2 class="heading">Burgeria foodtruck</h2>
+              <p>Burgeria is a local food truck that have been established since 2019 by six young local entrepreneur. It only started just as a simple dream by six people back in their students life. The idea to start a food truck is because of the loves of food among the community. The main focus of the food truck is to sell a western food that connected with a local touch. It is because food truck can be considered as a trendy things for people nowadays. The creation of Burgeria is because with a rise in youth spending, middle-class expenditure, conscious consumerism, mobile lifestyle and requirement of food on the go, the food truck model has become quite a rage among the local people. Besides that, Burgeria can be considered as a quite unique food truck that sell western type of food because there are quite unique type of food that can be found from the menu. </p><br>
+
+<p>Burgeria started their food truck journey on Klang Valley. It can be found on certain area such as Shah Alam or Pantai Dalam on weekdays. But on weekend the food truck can be found either on Subang Jaya or Sri Hartamas based on the week of the month. It will be set for the first two weekdays of the month at Shah Alam and the last two weekdays it will be at Pantai Dalam. It will be applied as the same for the weekend as the first two weekend of the month at Subang Jaya and the last two weekends at Sri Hartamas. The change of location is because to ensure that the popularity of Burgeria can keep on increasing and become much more famous in the future and can open up their own restaurant.</p><br>
+
+  </section>
+  <section>
+   <section id="about" class="section-padding">
+    <div class="menu">
+        <a name="team"></a>
+          <section id="banner8">
+    <div class="bg-color">
+      <a name="aboutus"></a>
+      <center><h1>OUR TEAM</h1>
+  <center><div>
+<div class="textWithBlurredBg">
+<img src="profile.jpg">
+  <h2>AIN IRDINA</h2>
+  <h3>Chef</h3>
+</div>
+
+<div class="textWithBlurredBg">
+  <img src="adam.jpg">
+  <h2>ADAM EDDY</h2>
+  <h3>Manager</h3>
+</div>
+<div class="textWithBlurredBg">
+<img src="hafiz.jpg">
+  <h2>HAFIZ TARMIZI</h2>
+  <h3>Service Staff</h3>
+</div>
+  </div></center>
+
+<center><div>
+<div class="textWithBlurredBg">
+  <img src="adamjaf.jpg">
+  <h2>ADAM IRFAN</h2>
+  <h3>Accountant</h3>
+</div>
+
+<div class="textWithBlurredBg">
+  <img src="aiyril.jpg">
+  <h2>AIYRIL ZIKREE</h2>
+  <h3>Hosting Staff</h3>
+</div>
+
+<div class="textWithBlurredBg">
+  <img src="eija.jpg">
+  <h2>HAFNIZAH</h2>
+  <h3>Busperson</h3>
+</div>
+</div></center>
+</section>
+
+         <section id="about" class="section-padding">
+    <div class="menu">
+        <a name="menu"></a>
+          <section id="banner4">
+    <div class="bg-color">
+      <center><h1>MENU</h1>
+        <label>
+            <a href="main.jpg">
+            <img src="main.jpg" alt=""></a>
+            <a href="drinks.jpg">
+            <img src="drinks.jpg"/></a>
+            <a href="sides.jpg">
+            <img src="sides.jpg"/></a>
+<center><h2>Click on the picture to view the menu of burgeria</h2></center>
+                        <div>  
+</section>
+
+    <section id="about" class="section-padding">
+    <div class="container">
+          <section id="banner5">
+    <div class="bg-color">
+        <a name="contact"></a>
+<a name="socialmedia"></a>
+   <br> <center><h1> SOCIAL MEDIA</h1><div class="container">
+      <div class="icon-container">
+        <a href="https://www.facebook.com/Burgeria-N5-104839824617809"><i class="fab fa-facebook-f fa-5x"></i></a>    
+         <a href="https://twitter.com/BurgeriaN5"><i class="fab fa-twitter fa-5x"></i></a>
+        <a href="https://www.instagram.com/burgerria_/"><i class="fab fa-instagram fa-5x"></i></a>
+        <br>
+   </div>
+    <center><h2>Follow our social media to know more about our lattest update</h2></center>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+
+</section>
+<section id="about" class="section-padding">
+    <div class="contact">
+          <section id="banner6">
+    <div class="bg-color">
+        <a name="location"></a>
+        <br>
+        <h1>Location of Burgeria</h1>
+    <p> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0374621172587!2d101.52342071422707!3d3.0846768977537353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4db35bdddd91%3A0xe747386b7135e126!2sTAPAK!5e0!3m2!1sen!2smy!4v1592909002457!5m2!1sen!2smy" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </p>
+</section>
+
+  <footer>
+    <h2><center><i>BURGERIA<br> "Good food is a good mood"</i></center></h2>
+    <p><b>TAPAK
+24b, Jalan Tengku Ampuan Zabedah K 9/K, Seksyen 9, 40100 Shah Alam, Selangor</b></p>
+    <p>Operation hour:</p>
+    <p>Monday - Thursday: 5:00 PM - 12:00 AM</p>
+    <p>Saturday - Sunday: 3:00 PM - 12:00 AM</p>
+    <p>Friday : Closed</p>
+    <hr>
+    <p>&copy 2020. All Rights Reserved.</p>
+    <p>This website was fully created by N5IM1105A student especially for our lecturer Sir Ahmed Noor Kader Mustajir Md Eusoff.</p>
+            <mt>Copyright &copy; create by MT</mt>
+        </footer>
+</body>
+</html>
+
